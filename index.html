@@ -1,354 +1,286 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Team Howls | サイバーセキュリティ学習コミュニティ</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Howls — Cybersecurity Learning Community</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="grid-overlay" aria-hidden="true"></div>
+<div class="grid-overlay"></div>
 
-<!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="header-inner">
-    <a href="#top" class="logo">
-      <span class="logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 40 40" width="32" height="32">
-          <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1"/>
-          <circle cx="20" cy="20" r="2.4" fill="currentColor"/>
-          <path d="M20 1.5 L20 7" stroke="currentColor" stroke-width="1"/>
-          <path d="M20 33 L20 38.5" stroke="currentColor" stroke-width="1"/>
-          <path d="M1.5 20 L7 20" stroke="currentColor" stroke-width="1"/>
-          <path d="M33 20 L38.5 20" stroke="currentColor" stroke-width="1"/>
-        </svg>
-      </span>
-      <span class="logo-text">TEAM HOWLS</span>
-    </a>
-
-    <nav class="main-nav" aria-label="メインナビゲーション">
+    <div class="logo">
+      <img src="howls_logo.png.png" alt="Team Howls Logo" class="header-logo">
+    </div>
+    
+    <nav class="main-nav">
       <ul>
-        <li><a href="#about"><span class="nav-index">01</span>About</a></li>
-        <li><a href="#founder"><span class="nav-index">02</span>Message</a></li>
-        <li><a href="#features"><span class="nav-index">03</span>Features</a></li>
-        <li><a href="#members"><span class="nav-index">04</span>Members</a></li>
-        <li><a href="#join"><span class="nav-index">05</span>Join</a></li>
+        <li><a href="#about"><span class="nav-index">01</span> About</a></li>
+        <li><a href="#features"><span class="nav-index">02</span> Features</a></li>
+        <li><a href="#members"><span class="nav-index">03</span> Members</a></li>
+        <li><a href="#join"><span class="nav-index">04</span> Join</a></li>
       </ul>
     </nav>
-
-    <a href="#join" class="header-cta">Discordに参加</a>
-
-    <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
-      <span></span><span></span><span></span>
+    
+    <button class="header-cta">JOIN DISCORD</button>
+    <button class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
   </div>
 </header>
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="top">
-  <div class="hero-signal" aria-hidden="true">
-    <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid meet">
-      <circle class="signal-ring r1" cx="400" cy="400" r="60" />
-      <circle class="signal-ring r2" cx="400" cy="400" r="60" />
-      <circle class="signal-ring r3" cx="400" cy="400" r="60" />
-      <circle class="signal-core" cx="400" cy="400" r="3.5" />
+<section class="hero">
+  <div class="hero-signal">
+    <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+      <circle class="signal-ring r1" cx="500" cy="500" r="50" stroke-width="1"/>
+      <circle class="signal-ring r2" cx="500" cy="500" r="50" stroke-width="1"/>
+      <circle class="signal-ring r3" cx="500" cy="500" r="50" stroke-width="1"/>
+      <circle class="signal-core" cx="500" cy="500" r="12"/>
     </svg>
   </div>
-
+  
   <div class="hero-inner">
-    <p class="eyebrow"><span class="eyebrow-dot"></span>CYBERSECURITY LEARNING COMMUNITY</p>
-    <h1 class="hero-copy">
-      セキュリティに興味がある人が、<br>
-      <span class="accent-gold">明日から</span>勉強を始められる社会へ。
-    </h1>
-    <p class="hero-sub">
-      Team Howls は、好奇心を学びに変える者たちが集う場所。<br class="br-pc">
-      独りで悩む夜を終わらせ、共に遠吠えを上げる仲間を見つけよう。
+    <p class="eyebrow">
+      <span class="eyebrow-dot"></span>
+      CYBERSECURITY COLLECTIVE
     </p>
+    
+    <h1 class="hero-copy">
+      セキュリティを学ぶなら<br>
+      <span class="accent-gold">Team Howls</span>
+    </h1>
+    
+    <p class="hero-sub">
+      Discordコミュニティで、サイバーセキュリティスキルを共に学び、成長する。初心者から上級者まで、安全で協力的な環境で知識を深めませんか。
+    </p>
+    
     <div class="hero-actions">
-      <a href="#join" class="btn btn-primary">Discordに参加する</a>
-      <a href="#about" class="btn btn-ghost">コミュニティを知る</a>
+      <a href="https://discord.gg/76y5fBFXf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Discord に参加</a>
+      
+      <a href="#about" class="btn btn-ghost btn-large">詳しく見る</a>
     </div>
   </div>
-
-  <div class="hero-scroll" aria-hidden="true">
-    <span class="scroll-line"></span>
+  
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
     <span class="scroll-label">SCROLL</span>
   </div>
 </section>
 
-<!-- ============ ABOUT ============ -->
-<section class="section about" id="about">
+<section class="section" id="about">
   <div class="section-inner">
     <div class="section-label">
-      <span class="label-line"></span>
-      <span class="label-text">// ABOUT</span>
+      <div class="label-line"></div>
+      <span class="label-text">01 — ABOUT</span>
     </div>
-
+    
     <h2 class="section-title">
-      ひとつの好奇心が、<br>群れの力になる。
+      Team Howls について
     </h2>
-
+    
+    <p class="section-desc">
+      全世代を対象とし、初心者が安心して最初の一歩を踏み出せる場所であるという、団体のビジョンを表明しています。
+    </p>
+    
     <div class="about-grid">
       <div class="about-lead">
         <p>
-          Team Howls（チームハウルズ）は、サイバーセキュリティを学びたいすべての人のための学習コミュニティです。狼が群れで生き、互いの声で居場所を確かめ合うように、私たちも学びの中で孤独にならない仲間関係を大切にしています。
+          「セキュリティに興味がある人が、明日から勉強を始められる社会」へ。<br><br>
+          「何から始めればいいかわからない」というこれまでの壁をなくすために。確かな情報と、共に成長できる仲間がいる場所であなたの学習をサポートします。
         </p>
       </div>
       <div class="about-detail">
         <p>
-          初心者がぶつかる「何から始めればいいか分からない」という最初の壁。専門用語の多さ、情報の断片化、独学の限界。Team Howls は、その壁を一人で越えなくていい場所をつくります。CTFへの挑戦、勉強会、情報共有、そして対等に議論できる仲間。学び続けるための環境を、コミュニティの力で用意します。
+          学生から社会人まで、知識の有無を問わず意欲がある方すべてが対象です。<br><br>
+          初心者にセキュリティという学問を学習する上でのロードマップを提供するとともに、セキュリティ初心者と上級者の間での情報交換、学び合い、交流を促進します。Discord内でのコミュニティとして、セキュリティ学習やサーバー内のメンバーとの雑談、講師への質問等を行います。
         </p>
       </div>
     </div>
-
-    <dl class="about-stats">
-      <div class="stat">
-        <dt>MEMBERS</dt>
-        <dd>1,200<span class="unit">+</span></dd>
-      </div>
-      <div class="stat">
-        <dt>STUDY EVENTS</dt>
-        <dd>月4<span class="unit">回</span></dd>
-      </div>
-      <div class="stat">
-        <dt>ACTIVE CHANNELS</dt>
-        <dd>20<span class="unit">+</span></dd>
-      </div>
-    </dl>
   </div>
 </section>
 
-<!-- ============ FOUNDER MESSAGE ============ -->
-<!--
-  [FOUNDER MESSAGE SECTION]
-  代表メッセージセクション。
-  文章の差し替えは <div class="founder-body"> 内の <p> タグを編集してください。
-  代表名・役職は <cite class="founder-cite"> 内を編集してください。
-  写真は <div class="founder-photo"> 内の <img> タグを有効化し、src を設定してください。
--->
-<section class="section founder" id="founder">
-  <div class="section-inner">
-
-    <!-- セクションラベル（既存の // ABOUT スタイルに統一） -->
-    <div class="section-label">
-      <span class="label-line"></span>
-      <span class="label-text">// FOUNDER MESSAGE</span>
-    </div>
-
-    <div class="founder-grid">
-
-      <!-- 左カラム：写真 + 署名 -->
-      <div class="founder-profile">
-
-        <!-- 代表写真プレースホルダー
-             写真が用意できたら以下を有効化し、src・alt を差し替えてください
-             <img src="YOUR_PHOTO.jpg" alt="代表名" class="founder-img"> -->
-        <div class="founder-photo" aria-hidden="true">
-          <span class="founder-photo-label">PHOTO</span>
-        </div>
-
-        <!-- 署名ブロック（名前・役職を差し替えてください） -->
-        <cite class="founder-cite">
-          <!-- ▼ 代表名をここに入力 -->
-          <span class="founder-name">Founder Name</span>
-          <!-- ▼ 役職をここに入力 -->
-          <span class="founder-title">代表 / Founder</span>
-        </cite>
-
-      </div>
-
-      <!-- 右カラム：メッセージ本文 -->
-      <div class="founder-content">
-
-        <h2 class="founder-heading">
-          セキュリティを、<br>
-          <span class="accent-gold">もっと身近に</span>。
-        </h2>
-
-        <!--
-          [差し替えポイント]
-          以下の <div class="founder-body"> 内の <p> タグを、
-          代表本人の文章に置き換えるだけで完成します。
-          段落を増やす場合は <p> タグを追加してください。
-        -->
-        <div class="founder-body">
-
-          <p>
-            Team Howlsをつくったのは、かつての自分と同じ場所で立ち止まっているひとの存在が頭から離れなかったからです。「セキュリティを学びたい」という気持ちがあっても、どこから手をつければいいかわからない。そのまま何ヶ月も動けずにいた経験が、このコミュニティの出発点にあります。
-          </p>
-
-          <p>
-            独学には限界があります。情報は溢れているのに、自分に合った順番で整理してくれる存在がいない。間違えたときに「それは違う」と優しく教えてくれる仲間がいない。私が感じた孤独を、次の誰かには感じさせたくないと思いました。
-          </p>
-
-          <p>
-            Team Howlsは、上手くなることだけを目標にしていません。学び続けられることを大切にしています。挫折しそうになったとき、声をかけてくれる仲間がいること。疑問を持ったとき、すぐに相談できる場所があること。それだけで、人はずっと先まで進んでいける。
-          </p>
-
-          <p>
-            セキュリティはこの時代を生きるすべての人に関係する学問です。難しそう、自分には無理、そんなことは一切ありません。あなたの好奇心は、ここで必ず仲間になれます。一緒に遠くへ行きましょう。
-          </p>
-
-        </div>
-        <!-- [/差し替えポイント] -->
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FEATURES ============ -->
 <section class="section features" id="features">
   <div class="section-inner">
     <div class="section-label">
-      <span class="label-line"></span>
-      <span class="label-text">// FEATURES</span>
+      <div class="label-line"></div>
+      <span class="label-text">02 — FEATURES</span>
     </div>
-
+    
     <h2 class="section-title">
-      Team Howls を支える、<br>3つの仕組み。
+      活動内容
     </h2>
-
+    
+    <p class="section-desc">
+      Team Howlsでは、実践的な学習とコミュニティの力で、あなたのセキュリティスキルの向上をサポートします。
+    </p>
+    
     <div class="feature-list">
-
       <article class="feature-card">
         <div class="feature-head">
-          <span class="feature-tag">SIGNAL / 01</span>
-          <h3>初心者専用ロードマップ</h3>
+          <span class="feature-tag">COMMUNITY</span>
+          <h3>Discord内での交流・学習</h3>
         </div>
         <p>
-          「何から学べばいいか」で迷わせません。基礎知識からCTF挑戦までを段階的に整理したロードマップと、各フェーズに対応したチャンネルを用意。今いる場所と、次に進む方向がいつでも分かります。
+          個人チャンネル、timesやサーバー、ボイスチャットを通じた仲間たちと共に学ぶ環境を提供します。
         </p>
       </article>
-
+      
       <article class="feature-card">
         <div class="feature-head">
-          <span class="feature-tag">SIGNAL / 02</span>
-          <h3>毎週の輪読会・勉強会</h3>
+          <span class="feature-tag">EVENTS</span>
+          <h3>メンバー主導の独自イベント</h3>
         </div>
         <p>
-          専門書の輪読、CTF write-up の共有、脆弱性ニュースの解説会を定期開催。一人で読み進めるには重い教材も、群れで読めば足が止まりません。録画やログは後から追えるよう蓄積しています。
+          メンバーと一緒にこれから作り上げていく予定です。
         </p>
       </article>
-
+      
       <article class="feature-card">
         <div class="feature-head">
-          <span class="feature-tag">SIGNAL / 03</span>
-          <h3>現役エンジニアとの距離の近さ</h3>
+          <span class="feature-tag">MENTORSHIP</span>
+          <h3>メンターによる伴走型サポート</h3>
         </div>
         <p>
-          セキュリティ業界で実務に携わる運営・メンバーが日常的に質問へ応答。教科書には載らない現場の判断軸や、キャリアの作り方まで、生きた知見にいつでもアクセスできます。
+          経験豊富な運営メンバーが1対1の相談や質問に対応します。学習の進め方や方向性をアドバイスし、「挫折させない」環境をサポートします。
         </p>
       </article>
-
     </div>
   </div>
 </section>
 
-<!-- ============ MEMBERS ============ -->
-<section class="section members" id="members">
+<section class="section" id="members">
   <div class="section-inner">
     <div class="section-label">
-      <span class="label-line"></span>
-      <span class="label-text">// MEMBERS</span>
+      <div class="label-line"></div>
+      <span class="label-text">03 — TEAM</span>
     </div>
-
+    
     <h2 class="section-title">
-      群れを率いる者たち。
+      運営メンバー
     </h2>
+    
     <p class="section-desc">
-      Team Howls の運営は、現役のセキュリティエンジニアや研究者が中心。それぞれの現場で得た知見を、コミュニティの学びに還元しています。
+      コミュニティの成長と、メンバーの学習をサポートする運営チームです。
     </p>
-
+    
     <div class="member-grid">
-
       <article class="member-card">
-        <div class="member-photo" aria-hidden="true">
-          <span class="photo-placeholder">PHOTO</span>
+        <div class="member-photo">
+          <img src="HP_kaigara.png" alt="Kaigara">
         </div>
-        <h3 class="member-name">Founder Name <span class="member-en">/ Founder</span></h3>
-        <p class="member-role">代表 / Webアプリケーション診断</p>
-        <p class="member-bio">
-          事業会社でのセキュリティ診断業務を経て、2022年にTeam Howlsを設立。「一人にしない学習環境」を理念に、コミュニティ全体の運営を統括。
-        </p>
+        <h3 class="member-name">Kaigara</h3>
+        <span class="member-en">Discord Name</span>
+        <p class="member-role">Role</p>
+      </article>
+      
+      <article class="member-card">
+        <div class="member-photo">
+          <img src="HP_mana.png" alt="Mana">
+        </div>
+        <h3 class="member-name">Mana</h3>
+        <span class="member-en">Discord Name</span>
+        <p class="member-role">Role</p>
+      </article>
+      
+      <article class="member-card">
+        <div class="member-photo">
+          <img src="HP_koufu.png" alt="Koufu">
+        </div>
+        <h3 class="member-name">Koufu</h3>
+        <span class="member-en">Discord Name</span>
+        <p class="member-role">Role</p>
+      </article>
+      
+      <article class="member-card">
+        <div class="member-photo">
+          <img src="HP_ryuki.png" alt="Ryuki">
+        </div>
+        <h3 class="member-name">Ryuki</h3>
+        <span class="member-en">Discord Name</span>
+        <p class="member-role">Role</p>
       </article>
 
       <article class="member-card">
-        <div class="member-photo" aria-hidden="true">
-          <span class="photo-placeholder">PHOTO</span>
+        <div class="member-photo">
+          <img src="HP_kou.png" alt="Kou">
         </div>
-        <h3 class="member-name">Member Name <span class="member-en">/ CTF Lead</span></h3>
-        <p class="member-role">CTF統括 / インフラセキュリティ</p>
-        <p class="member-bio">
-          国内CTFランキング常連。CTF初心者向けのワークショップ設計と、出題傾向の分析・解説を担当し、挑戦のハードルを下げる役割を担う。
-        </p>
+        <h3 class="member-name">Kou</h3>
+        <span class="member-en">Discord Name</span>
+        <p class="member-role">Role</p>
       </article>
-
-      <article class="member-card">
-        <div class="member-photo" aria-hidden="true">
-          <span class="photo-placeholder">PHOTO</span>
-        </div>
-        <h3 class="member-name">Member Name <span class="member-en">/ Community</span></h3>
-        <p class="member-role">コミュニティ運営 / 脅威インテリジェンス</p>
-        <p class="member-bio">
-          脅威動向のリサーチを本業としながら、コミュニティ内のイベント企画やオンボーディングを設計。新規メンバーが安心して輪に入れる仕組みを作る。
-        </p>
-      </article>
-
     </div>
   </div>
 </section>
 
-<!-- ============ CTA / FOOTER ============ -->
-<footer class="cta-footer" id="join">
-  <div class="cta-signal" aria-hidden="true">
-    <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
-      <circle class="signal-ring r1" cx="400" cy="380" r="40" />
-      <circle class="signal-ring r2" cx="400" cy="380" r="40" />
-      <circle class="signal-ring r3" cx="400" cy="380" r="40" />
+<section class="cta-footer" id="join">
+  <div class="cta-signal">
+    <svg viewBox="0 0 1000 600" xmlns="https://discord.gg/76y5fBFXf">
+      <circle class="signal-ring" cx="500" cy="300" r="100" stroke-width="0.8" opacity="0.4"/>
+      <circle class="signal-ring" cx="500" cy="300" r="200" stroke-width="0.6" opacity="0.3"/>
+      <circle class="signal-ring" cx="500" cy="300" r="300" stroke-width="0.5" opacity="0.2"/>
     </svg>
   </div>
-
+  
   <div class="cta-inner">
-    <p class="eyebrow"><span class="eyebrow-dot"></span>JOIN THE PACK</p>
     <h2 class="cta-title">
-      その好奇心に、<br>
-      <span class="accent-gold">遠吠え</span>で応えよう。
+      今すぐ<span class="accent-gold">Team Howls</span>に参加
     </h2>
     <p class="cta-desc">
-      学ぶ理由はいくつあってもいい。必要なのは、最初の一歩を一緒に踏み出す場所だけ。Discordに参加して、Team Howls の群れに加わってください。
+      サイバーセキュリティを学ぶ最高のコミュニティに加わろう。初心者も経験者も、安全で透明性の高い環境で共に成長しましょう。
     </p>
-    <a href="#" class="btn btn-primary btn-large">Discordサーバーに参加する</a>
+    
+    <button class="btn btn-primary btn-large">Discord コミュニティへ</button>
   </div>
-
+  
   <div class="footer-bottom">
     <div class="footer-bottom-inner">
       <div class="footer-logo">
-        <span class="logo-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" width="22" height="22">
-            <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1"/>
-            <circle cx="20" cy="20" r="2.4" fill="currentColor"/>
-          </svg>
-        </span>
-        <span>TEAM HOWLS</span>
+        <span class="logo-mark">◆</span>
+        Team Howls
       </div>
-
-      <nav class="footer-nav" aria-label="フッターナビゲーション">
+      
+      <nav class="footer-nav">
         <a href="#about">About</a>
         <a href="#features">Features</a>
-        <a href="#members">Members</a>
-        <a href="#join">Join</a>
+        <a href="#members">Team</a>
+        <a href="https://discord.gg/76y5fBFXf" target="_blank" rel="noopener noreferrer">Discord</a>
       </nav>
-
-      <p class="footer-copy">© 2026 Team Howls. All rights reserved.</p>
+      
+      <p class="footer-copy">
+        © 2026 Team Howls. All rights reserved.
+      </p>
     </div>
   </div>
-</footer>
+</section>
 
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const mainNav = document.querySelector('.main-nav');
+  
+  // ハンバーガーメニューをクリックした時の処理
+  navToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('is-active');
+    navToggle.classList.toggle('is-active');
+  });
+
+  // メニュー内のリンクをクリックしたらメニューを閉じる処理
+  const navLinks = document.querySelectorAll('.main-nav a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('is-active');
+      navToggle.classList.remove('is-active');
+    });
+  });
+</script>
 </body>
 </html>
