@@ -29,13 +29,16 @@
         <li><a href="#founder"><span class="nav-index">02</span>Message</a></li>
         <li><a href="#features"><span class="nav-index">03</span>Features</a></li>
         <li><a href="#members"><span class="nav-index">04</span>Members</a></li>
+        <li class="nav-join"><a href="#join"><span class="nav-index">05</span>Join</a></li>
       </ul>
     </nav>
 
     <a href="#join" class="header-cta">Discordに参加</a>
 
     <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
-      <span></span><span></span><span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
   </div>
 </header>
@@ -307,17 +310,19 @@
         <span>TEAM HOWLS</span>
       </div>
 
-      <nav class="footer-nav" aria-label="フッターナビゲーション">
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#members">Members</a>
-        <a href="#join">Join</a>
-      </nav>
-
       <p class="footer-copy">© 2026 Team Howls. All rights reserved.</p>
     </div>
   </div>
 </footer>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const mainNav = document.querySelector('.main-nav');
 
+  // ハンバーガーメニューをクリックした時の処理
+  navToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('is-active');
+    navToggle.classList.toggle('is-active');
+  });
+</script>
 </body>
 </html>
