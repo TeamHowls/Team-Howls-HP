@@ -200,7 +200,14 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
   gap: 12px;
   color: var(--white);
 }
-.logo-mark { color: var(--gold); display: inline-flex; }
+
+.logo-mark { 
+  width: 60px;
+  height: 60px;
+  color: var(--gold); 
+  display: inline-flex; 
+}
+
 .logo-text {
   font-family: var(--font-display);
   font-weight: 600;
@@ -236,6 +243,9 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 .header-cta:hover { border-color: var(--gold); color: var(--gold-bright); }
+
+/* PCでは非表示 */
+.main-nav .nav-join { display: none; }
 
 .nav-toggle {
   display: none;
@@ -411,8 +421,6 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
 /* =====================================================
    FEATURES
    ===================================================== */
-.features { background: var(--navy-mid); }
-
 .feature-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -613,8 +621,51 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
 
 @media (max-width: 860px) {
   .main-nav { display: none; }
+  .main-nav.is-active {
+    display: block;
+    position: absolute;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    background: rgba(10,17,40,.98);
+    border-top: 1px solid var(--line);
+  }
+
+  .main-nav.is-active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .main-nav.is-active li {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .main-nav.is-active a {
+    display: block;
+    padding: 18px 24px;
+  }
+
   .header-cta { display: none; }
+
+  .main-nav .nav-join { display: list-item; }
+
   .nav-toggle { display: flex; }
+
+  .nav-toggle.is-active span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .nav-toggle.is-active span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle.is-active span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .nav-toggle span{
+    transition: transform .3s, opacity .3s;
+  }
+
   .header-inner { justify-content: space-between; }
 }
 
@@ -639,11 +690,6 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
    代表メッセージセクション
    ===================================================== */
 
-/* セクション背景：Aboutと同じ navy-deep で自然に続く */
-.founder {
-  /* 上下の区切りを About / Features と揃える */
-}
-
 /* 2カラムグリッド：PC = 写真側(1) + 本文側(2.2)、モバイル = 縦積み */
 .founder-grid {
   display: grid;
@@ -666,7 +712,7 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
 /* 写真プレースホルダー */
 .founder-photo {
   width: 100%;
-  aspect-ratio: 3 / 4;         /* 縦長の人物写真比率 */
+  aspect-ratio: 1 / 1;         /* 縦長の人物写真比率 */
   background: linear-gradient(155deg, var(--navy-card), var(--navy-mid));
   border: 1px solid var(--line);
   display: flex;
@@ -686,16 +732,6 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
   font-size: 11px;
   letter-spacing: 0.15em;
   color: var(--white-faint);
-}
-
-/* 実際の写真を使う場合のスタイル */
-.founder-img {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  border: 1px solid var(--line);
 }
 
 /* 署名ブロック */
@@ -782,14 +818,13 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
   /* sticky解除（縦積み時は不要） */
   .founder-profile {
     position: static;
-    flex-direction: row;   /* モバイルでは写真と署名を横並び */
+    flex-direction: row;    /*モバイルでは写真と署名を横並び */
     align-items: flex-end;
     gap: 24px;
   }
   .founder-photo,
   .founder-img {
-    width: 140px;
-    min-width: 140px;
+    width: min(320px, 100%);
     aspect-ratio: 1 / 1;   /* モバイル小サイズは正方形 */
     max-height: none;
   }
