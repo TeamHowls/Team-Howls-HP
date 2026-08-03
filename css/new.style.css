@@ -200,7 +200,14 @@ button { font-family: inherit; background: none; border: none; cursor: pointer; 
   gap: 12px;
   color: var(--white);
 }
-.logo-mark { color: var(--gold); display: inline-flex; }
+
+.logo-mark { 
+  width: 60px;
+  height: 60px;
+  color: var(--gold); 
+  display: inline-flex; 
+}
+
 .logo-text {
   font-family: var(--font-display);
   font-weight: 600;
